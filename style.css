@@ -19,10 +19,33 @@
     -webkit-user-drag: none;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    list-style: none;
+    color: var(--clr-dark-slate-grey);
 }
 
 body {
     background-color: var(--clr-charcoal-grey);
+}
+
+.sign-up-card-div, 
+.confirmation-card-div {
+    width: 375px;
+    margin: 0 auto;
+    background-color: var(--clr-white);
+}
+
+.sign-up-card-div__info-div {
+    padding: 2em 1.5em;
+}
+
+.sign-up-card-div__info-div__heading {
+    font-size: 2.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.sign-up-card-div__info-div__list-div ul li {
+    display: flex;
+    gap: 1em;
 }
 
 .attribution {
