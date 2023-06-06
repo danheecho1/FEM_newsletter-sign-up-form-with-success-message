@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
     --clr-orange: hsl(4, 100%, 67%);
@@ -8,6 +8,7 @@
     --clr-white: hsl(0, 0%, 100%);
 
     --fw-regular: 400;
+    --fw-medium: 500;
     --fw-bold: 700;
 }
 
@@ -21,6 +22,7 @@
     font-size: 16px;
     list-style: none;
     color: var(--clr-dark-slate-grey);
+    font-weight: var(--fw-medium);
 }
 
 body {
@@ -36,6 +38,9 @@ body {
 
 .sign-up-card-div__info-div {
     padding: 2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .sign-up-card-div__info-div__heading {
@@ -43,11 +48,64 @@ body {
     font-weight: var(--fw-bold);
 }
 
+.sign-up-card-div__info-div__description {
+    line-height: 1.5em;;
+}
+
+.sign-up-card-div__info-div__list-div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
 .sign-up-card-div__info-div__list-div ul li {
     display: flex;
     gap: 1em;
+    line-height: 1.5em;
 }
 
-.attribution {
+.sign-up-card-div__info-div__list-div ul li img {
+    height: fit-content;
+    margin-top: 2px;
+}
+
+.sign-up-card-div__info-div__email-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75em;
+}
+
+.sign-up-card-div__info-div__email-div__label {
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: 1em;
+}
+
+.sign-up-card-div__info-div__email-div__input {
+    padding: 1em;
+    border-radius: 6px;
+    border: 1px solid var(--clr-grey);
+    margin-bottom: 1.625em;
+}
+
+.sign-up-card-div__info-div__email-div__button {
+    padding: 1em;
+    border-radius: 6px;
+    border: none;
+    color: var(--clr-white);
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-dark-slate-grey);
+}
+
+
+
+.confirmation-card-div {
+    display: none;
+}
+
+.attribution, 
+.attribution a {
     text-align: center;
+    color: white;
+    font-weight: var(--fw-regular);
 }
