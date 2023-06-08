@@ -31,6 +31,10 @@ body {
     background-color: hsl(var(--clr-charcoal-grey));
 }
 
+.desktop {
+    display: none;
+}
+
 .sign-up-card-div, 
 .confirmation-card-div {
     width: 375px;
@@ -100,8 +104,6 @@ body {
     cursor: pointer
 }
 
-
-
 .confirmation-card-div {
     display: none;
 }
@@ -112,3 +114,31 @@ body {
     color: white;
     font-weight: var(--fw-regular);
 }
+
+@media screen and (min-width: 960px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .sign-up-card-div {
+        width: 960px;
+        border-radius: 24px;
+    }
+    
+    .sign-up-card-div__image {
+        display: none;
+        margin: 1.425em;
+    }
+
+    .sign-up-card-div__image.desktop {
+        float: right;
+        display: block;
+    }
+}
+
+
+/* 960 x 640 */
