@@ -29,6 +29,9 @@
 
 body {
     background-color: hsl(var(--clr-charcoal-grey));
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .desktop {
@@ -43,7 +46,7 @@ body {
 }
 
 .sign-up-card-div__info-div {
-    padding: 2em 1.5em 2.375em;
+    padding: 2em 2em 2.375em;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -117,8 +120,6 @@ body {
 
 @media screen and (min-width: 960px) {
     body {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         min-height: 100vh;
@@ -127,16 +128,23 @@ body {
     .sign-up-card-div {
         width: 960px;
         border-radius: 24px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
     
     .sign-up-card-div__image {
         display: none;
-        margin: 1.425em;
+        margin: 1.425em 1.425em 1.425em 0;
     }
 
     .sign-up-card-div__image.desktop {
         float: right;
         display: block;
+    }
+
+    .sign-up-card-div__info-div {
+        padding: 5.25em 4em;
     }
 }
 
