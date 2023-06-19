@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 :root {
     /* These values for the color variables are hsl figures without hsl specification. 
@@ -12,6 +12,7 @@
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
+    --fw-black: 900;
 }
 
 * {
@@ -97,7 +98,8 @@ body {
     margin-bottom: 1.625em;
 }
 
-.sign-up-card-div__info-div__email-div__button {
+.sign-up-card-div__info-div__email-div__button, 
+.confirmation-card-div__dismiss-button {
     padding: 1.1em;
     border-radius: 6px;
     border: none;
@@ -107,8 +109,27 @@ body {
     cursor: pointer
 }
 
+.sign-up-card-div__info-div__email-div__button:hover, 
+.confirmation-card-div__dismiss-button:hover {
+    background-color: hsla(var(--clr-dark-slate-grey), 0.7);
+}
+
 .confirmation-card-div {
-    display: none;
+    padding: 1.75em;
+}
+
+.confirmation-card-div__heading {
+    font-weight: var(--fw-bold);
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.confirmation-card-div__description span {
+    font-weight: var(--fw-black);
+}
+
+.confirmation-card-div__description {
+    line-height: 1.5;
 }
 
 .attribution, 
@@ -148,5 +169,6 @@ body {
     }
 }
 
-
-/* 960 x 640 */
+.hidden {
+    display: none;
+}
