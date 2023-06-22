@@ -79,27 +79,28 @@ body {
     margin-top: 1px;
 }
 
-.sign-up-card-div__info-div__email-div {
+.sign-up-card-div__info-div__email-form {
     display: flex;
     flex-direction: column;
     margin-top: 1em;
 }
 
-.sign-up-card-div__info-div__email-div__label {
+.sign-up-card-div__info-div__email-form__label {
     font-size: 0.725rem;
     font-weight: var(--fw-bold);
     margin-bottom: 1em;
 }
 
-.sign-up-card-div__info-div__email-div__input {
+.sign-up-card-div__info-div__email-form__input {
     padding: 1.1em;
     border-radius: 6px;
     border: 1px solid hsla(var(--clr-grey), 0.25);
     margin-bottom: 1.625em;
 }
 
-.sign-up-card-div__info-div__email-div__button, 
+.sign-up-card-div__info-div__email-form__button, 
 .confirmation-card-div__dismiss-button {
+    width: 100%;
     padding: 1.1em;
     border-radius: 6px;
     border: none;
@@ -109,16 +110,21 @@ body {
     cursor: pointer
 }
 
-.sign-up-card-div__info-div__email-div__button:hover, 
+.sign-up-card-div__info-div__email-form__button:hover, 
 .confirmation-card-div__dismiss-button:hover {
     background-color: hsla(var(--clr-dark-slate-grey), 0.7);
 }
 
 .confirmation-card-div {
-    padding: 1.75em;
+    padding: 1.25em;
+}
+
+.confirmation-card-div img {
+    margin-top: 2em;
 }
 
 .confirmation-card-div__heading {
+    margin: 0.75em 0 0.5em 0;
     font-weight: var(--fw-bold);
     font-size: 2.5rem;
     line-height: 1;
@@ -129,7 +135,12 @@ body {
 }
 
 .confirmation-card-div__description {
+    margin-bottom: 20em;
     line-height: 1.5;
+}
+
+.confirmation-card-div__dismiss-button {
+    margin-bottom: 0.5em;
 }
 
 .attribution, 

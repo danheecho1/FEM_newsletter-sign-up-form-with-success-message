@@ -24,19 +24,19 @@
                         <li><img src="./assets/images/icon-list.svg" alt="">And much more!</li>
                     </ul>
                 </div>
-                <div class="sign-up-card-div__info-div__email-div">
-                    <label for="email" class="sign-up-card-div__info-div__email-div__label">Email address</label>
-                    <input class="sign-up-card-div__info-div__email-div__input" type="text" name="email" placeholder="email@company.com">
-                    <button class="sign-up-card-div__info-div__email-div__button" type="submit" onclick="confirmation()">Subscribe to monthly newsletter</button>
-                </div>
+                <form class="sign-up-card-div__info-div__email-form">
+                    <label for="email" class="sign-up-card-div__info-div__email-form__label">Email address</label>
+                    <input class="sign-up-card-div__info-div__email-form__input" type="text" id="email" name="email" placeholder="email@company.com">
+                    <button class="sign-up-card-div__info-div__email-form__button" type="submit" onclick="subscribe()">Subscribe to monthly newsletter</button>
+                </form>
             </div>
         </div>
         <!-- Confirmation card -->
         <div class="confirmation-card-div hidden">
             <img src="./assets/images/icon-success.svg" alt="">
             <h1 class="confirmation-card-div__heading">Thanks for subscribing!</h1>
-            <p class="confirmation-card-div__description">A confirmation email has been sent to <span>email@email.com</span>. Please open it and click the button inside to confirm your subscription.</p>
-            <button class="confirmation-card-div__dismiss-button" onclick="confirmation()">Dismiss message</button>
+            <p class="confirmation-card-div__description">A confirmation email has been sent to <span></span>. Please open it and click the button inside to confirm your subscription.</p>
+            <button class="confirmation-card-div__dismiss-button" onclick="dismiss()">Dismiss message</button>
         </div>
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/danheecho1" target="_blank">Danny Cho</a>.
