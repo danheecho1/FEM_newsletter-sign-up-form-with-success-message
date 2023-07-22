@@ -34,16 +34,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/desktop-main.png)
-![](./assets/images/desktop-success.png)
-![](./assets/images/error.png)
-![](./assets/images/mobile-main.png)
-![](./assets/images/mobile-success.png)
+![Desktop Main](./assets/images/desktop-main.png)
+![Desktop Success](./assets/images/desktop-success.png)
+![Desktop Error](./assets/images/error.png)
+![Mobile Main](./assets/images/mobile-main.png)
+![Mobile Success](./assets/images/mobile-success.png)
 
 ### Links
 
 - [Solution URL](https://github.com/danheecho1/FEM_results-summary-component)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://fem-newsletter-sign-up-form-with-success-message.vercel.app/)
 
 ## My process
 
