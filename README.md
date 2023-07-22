@@ -34,11 +34,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Main](./assets/images/desktop-main.png)
-![Desktop Success](./assets/images/desktop-success.png)
-![Desktop Error](./assets/images/error.png)
-![Mobile Main](./assets/images/mobile-main.png)
-![Mobile Success](./assets/images/mobile-success.png)
+![Desktop Main](./design/solution-desktop-main.png)
+![Desktop Success](./design/solution-desktop-success.png)
+![Desktop Error](./design/solution-error.png)
+![Mobile Main](./design/solution-mobile-main.png)
+![Mobile Success](./design/solution-mobile-success.png)
 
 ### Links
 
