@@ -85,10 +85,26 @@ body {
     margin-top: 1em;
 }
 
-.sign-up-card-div__info-div__email-form__label {
+.sign-up-card-div__info-div__email-form__label-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up-card-div__info-div__email-form__label-div__label {
     font-size: 0.725rem;
     font-weight: var(--fw-bold);
     margin-bottom: 1em;
+}
+
+.sign-up-card-div__info-div__email-form__label-div__invalid-indicator {
+    display: none;
+    font-size: 0.725rem;
+    font-weight: var(--fw-bold);
+    color: hsl(var(--clr-orange));
+}
+
+.sign-up-card-div__info-div__email-form__label-div__invalid-indicator.error {
+    display: block;
 }
 
 .sign-up-card-div__info-div__email-form__input {
@@ -96,6 +112,12 @@ body {
     border-radius: 6px;
     border: 1px solid hsla(var(--clr-grey), 0.25);
     margin-bottom: 1.625em;
+}
+
+.sign-up-card-div__info-div__email-form__input.error {
+    border-color: hsl(var(--clr-orange));
+    color: hsl(var(--clr-orange));
+    background-color: hsla(var(--clr-orange), 0.1);
 }
 
 .sign-up-card-div__info-div__email-form__button, 
@@ -177,6 +199,28 @@ body {
 
     .sign-up-card-div__info-div {
         padding: 5.25em 4em;
+    }
+    .confirmation-card-div {
+        border-radius: 24px;
+        width: 415px;
+        padding: 2.5em 3em 3em;
+    }
+    .confirmation-card-div img {
+        margin: 0 0 2em;
+        width: 50px;
+    }
+    .confirmation-card-div__heading {
+        margin: 0 0 0.625em;
+    }
+    .confirmation-card-div__description, 
+    .confirmation-card-div__description span {
+        font-size: 0.875rem;
+        margin-bottom: 2em;
+        line-height: 1.5;
+    }
+    .confirmation-card-div__dismiss-button {
+        font-size: 0.875rem;
+        margin: 0;
     }
 }
 
